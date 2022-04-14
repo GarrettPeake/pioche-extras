@@ -1,12 +1,12 @@
 {
-  "name": "pioche",
-  "version": "0.1.2",
-  "description": "Pickaxe in french, get it? Workers, durable objects, pickaxe...",
+  "name": "pioche-extras",
+  "version": "0.1.0",
+  "description": "Prebuilt utilities for the pioche framework",
   "author": "[Garrett Peake](https://github.com/GarrettPeake)",
-  "homepage": "https://github.com/GarrettPeake/pioche",
+  "homepage": "https://github.com/GarrettPeake/pioche-extras",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GarrettPeake/pioche"
+    "url": "https://github.com/GarrettPeake/pioche-extras"
   },
   "main": "./src/index.js",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "api",
     "durable objects",
     "wrangler",
-    "framework"
+    "framework",
+    "pioche"
   ],
   "devDependencies": {
     "@cloudflare/workers-types": "^3.4.0",
