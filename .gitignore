@@ -4,5 +4,3 @@ dist/
 
 # Exclude script used to test prebuilts
 entry.ts
-babel.config.js
-rollup.config.js
