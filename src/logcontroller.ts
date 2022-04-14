@@ -1,13 +1,13 @@
-import { WebsocketController } from "../../controllers/websocketcontroller";
-import { BaseMap, GetMap, PostMap } from "../../routing";
-import { assertStructure } from "..";
-import { Session } from "../../io/input";
+import { WebsocketController } from "pioche/controllers/websocketcontroller";
+import { BaseMap, GetMap, PostMap } from "pioche/routing";
+import { assertStructure } from "pioche/utils";
+import { Session } from "pioche/io/input";
 
 /**
  * A prebuilt durable object offering live and delayed WebSocket logging
  */
 @BaseMap("/logs")
-export class LogsDurableObject extends WebsocketController {
+export class LogsController extends WebsocketController {
 
     constructor(state: any, env: any) {
         super(state, env);

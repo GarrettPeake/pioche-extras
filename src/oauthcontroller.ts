@@ -1,4 +1,4 @@
-import { DurableObjectController } from "../../controllers/durableobjectcontroller";
+import { DurableObjectController } from "pioche/controllers/durableobjectcontroller";
 
 
 export class OAuthController extends DurableObjectController{

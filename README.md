@@ -24,6 +24,7 @@ npm install pioche-extras
 ```
 Then to implement the features just use them as you would normal pioche controllers and middleware
 ```ts
+import { DiscordAuthController } from 'pioche-extras/discordauthcontroller';
 export { DiscordAuthController } from 'pioche-extras/discordauthcontroller';
 ...
 Router.register(DiscordAuthController, {binding = "DISCORDAUTH"});

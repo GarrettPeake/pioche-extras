@@ -1,9 +1,9 @@
-import { DurableObjectController } from "../../controllers/durableobjectcontroller";
-import { Session } from "../../io/input";
-import { BaseMap, GetMap } from "../../routing";
+import { Session } from "pioche/io/input";
+import { BaseMap, GetMap } from "pioche/routing";
+import { OAuthController } from "./oauthcontroller";
 
 @BaseMap("/identity")
-export class DiscordAuth extends DurableObjectController{
+export class DiscordAuthController extends OAuthController{
 
     @GetMap("/identity/discord")
     async handle_redirect(session: Session){
