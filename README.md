@@ -4,7 +4,7 @@
  </p>
  
  <div align="center">
-  <p>TypeScript first framework for <a href='https://workers.cloudflare.com'>Cloudflare Workers</a> enabling ⚡lightning⚡ fast development and execution</p>
+  <p>**PIOCHE/PIOCHE-EXTRAS IS A WORK IN PROGRESS AND DOES NOT YET FUNCTION**</p><p>TypeScript first framework for <a href='https://workers.cloudflare.com'>Cloudflare Workers</a> enabling ⚡lightning⚡ fast development and execution</p>
 </div>
 <a href="https://www.npmjs.com/package/pioche-extras"><img src="https://badgen.net/npm/v/pioche-extras?color=blue" alt="npm version"></a>
 </div>
