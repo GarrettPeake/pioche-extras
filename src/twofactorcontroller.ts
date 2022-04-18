@@ -1,3 +1,10 @@
+import { DurableObjectController } from "pioche";
+
+
+export class TwoFactorController extends DurableObjectController{
+
+}
+
 /**
  * Create a 6 digit code for a given value at the specified time
  * @param value Value to create a code for

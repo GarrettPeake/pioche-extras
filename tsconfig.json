@@ -1,24 +1,26 @@
 {
     "compilerOptions": {
-      "outDir": "dist/tsc",
-      "module": "ESNext",
-      "target": "esnext",
-      "lib": ["esnext"],
-      "alwaysStrict": true,
-      "strict": true,
-      "preserveConstEnums": true,
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "esModuleInterop": true,
-      "strictPropertyInitialization": false,
-      "noImplicitAny": false,
-      "strictNullChecks": false,
-      "experimentalDecorators": true,
-      "types": [
-        "@cloudflare/workers-types",
-        "@types/jest"      
-      ]
+        "outDir": "dist",
+        "module": "esnext",
+        "target": "es6",
+        "declaration": true,
+        "declarationDir": "types",
+        "alwaysStrict": true,
+        "strict": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "experimentalDecorators": true,
+        "types": [
+            "@cloudflare/workers-types",
+            "@types/jest",
+            "node"
+        ]
     },
     "include": ["src"],
     "exclude": ["node_modules", "dist", "test"]
-  }
+}

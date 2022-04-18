@@ -1,4 +1,4 @@
-import { Session } from "pioche/io/input";
+import { Session } from "pioche";
 
 export function easyPreflight(session: Session, next: any){
     if(session.request.method === "OPTIONS"){
