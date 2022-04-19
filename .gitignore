@@ -1,3 +1,5 @@
 node_modules/
 wrangler.toml
+rollup.config.deploy.js
 dist/
+deploy/

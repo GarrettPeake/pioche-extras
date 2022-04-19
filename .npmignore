@@ -4,6 +4,7 @@
 # testing
 /test
 /coverage
+/deploy
 
 # misc
 /.git
@@ -14,5 +15,6 @@
 .eslintrc
 .gitignore
 rollup.config.js
+rollup.config.deploy.js
 tsconfig.json
 wrangler.toml
