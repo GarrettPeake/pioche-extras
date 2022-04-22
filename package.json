@@ -16,12 +16,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npx rollup -c",
+    "build": "npm install && npx rollup -c",
     "test": "jest",
     "lint": "eslint . --ext .ts",
-    "npmpublish": "npm run build && npm publish",
-    "workerpublish": "wrangler publish",
-    "miniflare": "miniflare dist/esm/entry.js -w -d"
+    "npmpublish": "npm run build && npm publish"
   },
   "keywords": [
     "cloudflare",
@@ -46,6 +44,6 @@
     "ts-jest": "^27.1.3"
   },
   "dependencies": {
-    "pioche": "^0.2.7"
+    "pioche": "^0.3.0"
   }
 }
