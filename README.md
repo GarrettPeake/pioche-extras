@@ -9,28 +9,39 @@
 <a href="https://www.npmjs.com/package/pioche-extras"><img src="https://badgen.net/npm/v/pioche-extras?color=blue" alt="npm version"></a>
 </div>
 
-Note: This repository is extra features built on top of pioche, to use these features [install pioche first](https://github.com/GarrettPeake/pioche)
+Note: This repository is currently **non-functional** extra features built on top of pioche, to use these features [install pioche first](https://github.com/GarrettPeake/pioche)
 
 ## 🔋 Tree Shakeable Batteries For Pioche
  - [ ] Password & OAuth controllers
  - [x] WebSocket logging utility
  - [ ] Configurable CORS middleware
+ - [ ] Geolocation data middleware
+ - [ ] Static asset server from KV
 
 ## 💾 Installation
 
-To install just run
+To install in your Pioche project just run
 ```
 npm install pioche-extras
 ```
-Then to implement the features just use them as you would normal pioche controllers and middleware
+Then to implement the features just add them to `pioche.config.js/ts`
 ```ts
-import { DiscordAuthController } from 'pioche-extras';
-export { DiscordAuthController } from 'pioche-extras';
-...
-Router.register(DiscordAuthController, {binding = "DISCORDAUTH"});
-...
+import { DiscordAuthController, ezCORS } from 'pioche-extras';
+
+export default {
+    extControllers: [DiscordAuthController],
+    prehandlers: [ezCORS],
+    posthandlers: [],
+    kv_namespaces: {},
+}
 ```
-Now you can login to your API using discord!
+Now in your controller, you can use the client's name like shown
+```ts
+@GetMap("/myname")
+async getDiscordName(ses: Session, res: OutboundResponse){
+  res.body = ses.jwt?.discord.username;
+}
+```
 
 ## People
 
